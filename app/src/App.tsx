@@ -1,18 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-function Home() {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-700">
-      <div className="text-lg">Todo app loading…</div>
-    </div>
-  );
-}
+import HomePage from '@/pages/HomePage';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );
